@@ -105,7 +105,7 @@ const SEED_POPUP = {
   enabled: true,
   title: '🎉 Register for Hamburg Ganesha Utsav 2026!',
   content: 'Join Anivasi Bharathi e.V. for the largest community festival in Northern Germany from September 18th to 20th. Volunteer registration, cultural program entry, and Mahaprasad sponsorship details are now open.',
-  imageUrl: 'https://unsplash.com/photos/lord-ganesha-figurine-ICt8jR9TAtQ?auto=format&fit=crop&w=800&q=80',
+  imageUrl: 'https://images.unsplash.com/photo-1567878673047-0451c851056e?auto=format&fit=crop&w=800&q=80',
   actionText: 'Register Now',
   actionLink: 'https://tickettailor.com/events/anivasibharathi/ganesha2026',
   fromDate: '2026-06-20',
@@ -211,6 +211,31 @@ const setJSON = (key, value) => {
   }
 };
 
+const normalizeImageUrl = (url) => {
+  if (!url) return '';
+  const trimmed = url.trim();
+  
+  // If it's a page link of Unsplash
+  if (trimmed.includes('unsplash.com/photos/')) {
+    if (trimmed.includes('ICt8jR9TAtQ')) {
+      return 'https://images.unsplash.com/photo-1567878673047-0451c851056e?auto=format&fit=crop&w=800&q=80';
+    }
+    try {
+      const parts = trimmed.split('/');
+      const lastPart = parts[parts.length - 1].split('?')[0];
+      const segments = lastPart.split('-');
+      const id = segments[segments.length - 1];
+      
+      if (id === 'ICt8jR9TAtQ') {
+        return 'https://images.unsplash.com/photo-1567878673047-0451c851056e?auto=format&fit=crop&w=800&q=80';
+      }
+    } catch (e) {
+      console.error('Error parsing image URL:', e);
+    }
+  }
+  return trimmed;
+};
+
 export const database = {
   // Initialize Database with Seed Data if not present
   initialize: () => {
@@ -239,7 +264,9 @@ export const database = {
       cachedPopup.includes('1609137144813-74b88a8d116c') ||
       cachedPopup.includes('1566847438217-76e82d383f84') ||
       cachedPopup.includes('1590050752117-238cb0fb12b1') ||
-      cachedPopup.includes('1567878673047-0451c851056e')
+      cachedPopup.includes('1567878673047-0451c851056e') ||
+      cachedPopup.includes('unsplash.com/photos/') ||
+      cachedPopup.includes('ICt8jR9TAtQ')
     )) {
       localStorage.removeItem(STORAGE_KEYS.POPUP_SETTINGS);
     }
@@ -281,6 +308,9 @@ export const database = {
   
   saveEvent: (event) => {
     const events = database.getEvents();
+    if (event.imageUrl) {
+      event.imageUrl = normalizeImageUrl(event.imageUrl);
+    }
     if (event.id) {
       // Edit existing
       const idx = events.findIndex(e => e.id === event.id);
@@ -310,6 +340,9 @@ export const database = {
   getPopupSettings: () => getJSON(STORAGE_KEYS.POPUP_SETTINGS, SEED_POPUP),
   
   savePopupSettings: (settings) => {
+    if (settings && settings.imageUrl) {
+      settings.imageUrl = normalizeImageUrl(settings.imageUrl);
+    }
     setJSON(STORAGE_KEYS.POPUP_SETTINGS, settings);
     return settings;
   },
