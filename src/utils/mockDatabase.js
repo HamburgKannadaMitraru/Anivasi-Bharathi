@@ -17,7 +17,7 @@ const SEED_EVENTS = [
     location: 'Alsterwiese Schwanenwik, Hamburg',
     category: 'Yoga',
     description: 'Celebrate health, mindfulness, and community on the banks of the Alster river. Join us for a collective session of Sun Salutations (Surya Namaskar), guided Pranayama, and meditation. Please bring your own yoga mat and water bottle. Open to all ages and experience levels!',
-    imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80',
     registrationLink: 'https://tickettailor.com/events/anivasibharathi/yoga2026',
     isFeatured: true
   },
@@ -30,7 +30,7 @@ const SEED_EVENTS = [
     location: 'Bürgerhaus Wilhelmsburg, Mengestraße 20, 21107 Hamburg',
     category: 'Festival',
     description: 'Our flagship 3-day public festival! Featuring Ganesha Sthapana, daily Maha Aarti, cultural dances, classical music recitals, Palaki Utsav (grand procession), and authentic Indian food stalls. Admission is free, but registrations are required for crowd management and planning free Mahaprasad distribution.',
-    imageUrl: 'https://images.unsplash.com/photo-1609137144813-74b88a8d116c?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80',
     registrationLink: 'https://tickettailor.com/events/anivasibharathi/ganesha2026',
     isFeatured: true
   },
@@ -43,7 +43,7 @@ const SEED_EVENTS = [
     location: 'Bürgerhaus Wilhelmsburg, Mengestraße 20, 21107 Hamburg',
     category: 'Festival',
     description: 'Day 2 of our Ganesha Utsav. Highlights include the traditional Dhol Tasha performances, children\'s cultural competitions, folk dances of India showcase, and the colorful Palaki Utsav procession around the park.',
-    imageUrl: 'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1567878673047-0451c851056e?auto=format&fit=crop&w=800&q=80',
     registrationLink: 'https://tickettailor.com/events/anivasibharathi/ganesha2026',
     isFeatured: false
   },
@@ -56,7 +56,7 @@ const SEED_EVENTS = [
     location: 'Sportplatz Eimsbüttel, Hamburg',
     category: 'Sports',
     description: 'Annual sports meet for the Indian community in Hamburg. Activities include Box Cricket Tournament, Badminton Singles & Doubles, Tug of War, Lemon-spoon races for kids, and lemon-race for seniors. Connect, compete, and enjoy delicious street food!',
-    imageUrl: 'https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80',
     registrationLink: 'https://tickettailor.com/events/anivasibharathi/sports2026',
     isFeatured: true
   },
@@ -69,7 +69,7 @@ const SEED_EVENTS = [
     location: 'Logensaal Kammerspiele, Hamburg',
     category: 'Festival',
     description: 'Celebrate the Festival of Lights! A grand evening filled with Bollywood and traditional dances, musical performances, lighting of Diya, and a lavish Indian buffet dinner. Meet old friends and make new ones in a festive environment.',
-    imageUrl: 'https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1680459520309-189cf5b22212?auto=format&fit=crop&w=800&q=80',
     registrationLink: 'https://tickettailor.com/events/anivasibharathi/diwali2026',
     isFeatured: true
   },
@@ -82,7 +82,7 @@ const SEED_EVENTS = [
     location: 'Krummholzberg 9, 21073 Hamburg (Association Center)',
     category: 'Spiritual',
     description: 'Join us for our monthly devotional gathering. The program includes community singing of traditional Bhajans, a short spiritual discourse on Vedantic philosophy, followed by Aarti and distribution of Prasad. Bring family and friends to recharge your spiritual battery.',
-    imageUrl: 'https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1663181888868-e3a44b1a8e2d?auto=format&fit=crop&w=800&q=80',
     registrationLink: '',
     isFeatured: false
   },
@@ -95,7 +95,7 @@ const SEED_EVENTS = [
     location: 'Stadtpark Hamburg (Festwiese)',
     category: 'Festival',
     description: 'Celebrate spring with organic colors, music, and food! We gather at the park meadow to play with dry colors (Gulaal), enjoy Thandai, and dance to Holi tunes. Dry organic colors will be provided at the venue.',
-    imageUrl: 'https://images.unsplash.com/photo-1561494522-835c6020583b?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80',
     registrationLink: '',
     isFeatured: false
   }
@@ -105,7 +105,7 @@ const SEED_POPUP = {
   enabled: true,
   title: '🎉 Register for Hamburg Ganesha Utsav 2026!',
   content: 'Join Anivasi Bharathi e.V. for the largest community festival in Northern Germany from September 18th to 20th. Volunteer registration, cultural program entry, and Mahaprasad sponsorship details are now open.',
-  imageUrl: 'https://images.unsplash.com/photo-1567591907373-c155d045d625?q=80&w=800&auto=format&fit=crop',
+  imageUrl: 'https://unsplash.com/photos/lord-ganesha-figurine-ICt8jR9TAtQ?auto=format&fit=crop&w=800&q=80',
   actionText: 'Register Now',
   actionLink: 'https://tickettailor.com/events/anivasibharathi/ganesha2026',
   fromDate: '2026-06-20',
@@ -214,6 +214,36 @@ const setJSON = (key, value) => {
 export const database = {
   // Initialize Database with Seed Data if not present
   initialize: () => {
+    // Self-healing check: Force update if browser contains outdated/broken/cat/premium image seeds in localStorage
+    const cachedEvents = localStorage.getItem(STORAGE_KEYS.EVENTS);
+    if (cachedEvents && (
+      cachedEvents.includes('1609137144813-74b88a8d116c') || 
+      cachedEvents.includes('1544367567-0f2fcb009e0b') || 
+      cachedEvents.includes('1606293926075-69a00dbfde81') ||
+      cachedEvents.includes('1530541930197-ff16ac917b0e') ||
+      cachedEvents.includes('1540747737956-37872404a8de') ||
+      cachedEvents.includes('1566847438217-76e82d383f84') ||
+      cachedEvents.includes('1583089892943-e02e5b027f6a') ||
+      cachedEvents.includes('1590050752117-238cb0fb12b1') ||
+      cachedEvents.includes('1464306208223-e0b44d2a29fd') ||
+      cachedEvents.includes('1719894820767-ed5ffca6f4dd') ||
+      cachedEvents.includes('1769979628896-2faae5556b3e') ||
+      cachedEvents.includes('1617694276915-762d9749e6f7')
+    )) {
+      localStorage.removeItem(STORAGE_KEYS.EVENTS);
+    }
+
+    const cachedPopup = localStorage.getItem(STORAGE_KEYS.POPUP_SETTINGS);
+    if (cachedPopup && (
+      cachedPopup.includes('1567591907373-c155d045d625') || 
+      cachedPopup.includes('1609137144813-74b88a8d116c') ||
+      cachedPopup.includes('1566847438217-76e82d383f84') ||
+      cachedPopup.includes('1590050752117-238cb0fb12b1') ||
+      cachedPopup.includes('1567878673047-0451c851056e')
+    )) {
+      localStorage.removeItem(STORAGE_KEYS.POPUP_SETTINGS);
+    }
+
     if (!localStorage.getItem(STORAGE_KEYS.EVENTS)) {
       setJSON(STORAGE_KEYS.EVENTS, SEED_EVENTS);
     }

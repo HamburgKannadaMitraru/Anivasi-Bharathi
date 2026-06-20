@@ -11,7 +11,7 @@ export default function MemoriesGallery() {
       category: 'Festival',
       title: 'Hamburg Ganesha Palaki Procession',
       caption: 'Celebrating Palaki Utsav with traditional Dhol Tasha drums on the streets of Wilhelmsburg.',
-      url: 'https://images.unsplash.com/photo-1609137144813-74b88a8d116c?q=80&w=800&auto=format&fit=crop',
+      url: 'https://unsplash.com/photos/lord-ganesha-figurine-ICt8jR9TAtQ?auto=format&fit=crop&w=800&q=80',
       date: 'September 2025'
     },
     {
@@ -19,7 +19,7 @@ export default function MemoriesGallery() {
       category: 'Yoga',
       title: 'Yoga Session at Alster Lake',
       caption: 'Group Sun Salutations on the banks of Alster river during International Day of Yoga.',
-      url: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80',
       date: 'June 2025'
     },
     {
@@ -27,7 +27,7 @@ export default function MemoriesGallery() {
       category: 'Festival',
       title: 'Diwali Diya Lighting Ceremony',
       caption: 'Community members lighting traditional oil lamps to celebrate the victory of light over darkness.',
-      url: 'https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=800&q=80',
       date: 'November 2025'
     },
     {
@@ -35,7 +35,7 @@ export default function MemoriesGallery() {
       category: 'Sports',
       title: 'Box Cricket League Championship',
       caption: 'Vibrant local cricket league held in sportplatz Eimsbüttel with over 12 community teams participating.',
-      url: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1540747737956-37872404a8de?auto=format&fit=crop&w=800&q=80',
       date: 'July 2025'
     },
     {
@@ -43,7 +43,7 @@ export default function MemoriesGallery() {
       category: 'Spiritual',
       title: 'Satsang and Bhajan Sandhya',
       caption: 'Monthly spiritual gathering filled with devotional songs, bringing together families and seniors.',
-      url: 'https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80',
       date: 'October 2025'
     },
     {
@@ -51,7 +51,7 @@ export default function MemoriesGallery() {
       category: 'Festival',
       title: 'Holi Colors Celebration',
       caption: 'Vibrant dry colors play with organic gulaal on a sunny spring afternoon at Stadtpark Hamburg.',
-      url: 'https://images.unsplash.com/photo-1561494522-835c6020583b?q=80&w=800&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80',
       date: 'March 2025'
     }
   ];
