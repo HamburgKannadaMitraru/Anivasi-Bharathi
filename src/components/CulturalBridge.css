@@ -1,0 +1,150 @@
+.cultural-bridge-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #FCFAF2 0%, #FAF6EE 100%);
+  position: relative;
+}
+
+.bridge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.bridge-card {
+  padding: 0 !important;
+  overflow: hidden;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(13, 92, 117, 0.05) !important;
+}
+
+.bridge-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--glass-shadow-hover) !important;
+}
+
+.bridge-card-header {
+  padding: 1.8rem 2.2rem;
+  border-bottom: 1px solid rgba(13, 92, 117, 0.04);
+  text-align: left;
+}
+
+.bridge-card-header h3 {
+  font-size: 1.4rem;
+  color: var(--secondary);
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Visual Box */
+.bridge-visual-box {
+  background: #FAF8F3;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(13, 92, 117, 0.04);
+}
+
+.bridge-svg {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+/* Animate the connection dash-lines on hover representing synergy flow */
+@keyframes drawConnection {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.bridge-card:hover .bridge-svg path[stroke-dasharray] {
+  animation: drawConnection 1.2s linear infinite;
+  stroke: var(--primary);
+}
+
+.bridge-card:hover .bridge-svg rect,
+.bridge-card:hover .bridge-svg path {
+  transition: stroke var(--transition-fast);
+}
+
+.bridge-card:hover .col-hamburg h4 {
+  color: var(--primary);
+}
+
+.bridge-card:hover .col-india h4 {
+  color: var(--accent);
+}
+
+/* Details Box */
+.bridge-compare-details {
+  padding: 2.2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  text-align: left;
+}
+
+.compare-column {
+  flex: 1;
+}
+
+.compare-column h5 {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.col-hamburg h5 {
+  color: var(--secondary);
+}
+
+.col-india h5 {
+  color: var(--accent);
+}
+
+.compare-column h4 {
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+  line-height: 1.25;
+  transition: color var(--transition-fast);
+}
+
+.compare-column p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.compare-divider {
+  width: 1px;
+  border-left: 1.5px dashed var(--accent-gold);
+  opacity: 0.6;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .bridge-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bridge-compare-details {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .compare-divider {
+    width: 100%;
+    height: 1px;
+    border-left: none;
+    border-top: 1.5px dashed var(--accent-gold);
+    margin: 0;
+  }
+}

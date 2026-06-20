@@ -1,0 +1,204 @@
+.calendar-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 3rem !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(15, 76, 129, 0.05) !important;
+  box-shadow: 0 20px 40px -15px rgba(15, 76, 129, 0.06) !important;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.calendar-month-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--grad-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.calendar-nav-btn {
+  background: rgba(15, 76, 129, 0.03);
+  border: 1px solid rgba(15, 76, 129, 0.1);
+  color: var(--secondary);
+  font-size: 1.3rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.calendar-nav-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #FFFFFF;
+  transform: scale(1.08);
+}
+
+/* Weekdays */
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(15, 76, 129, 0.08);
+  padding-bottom: 1rem;
+}
+
+.weekday-label {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Days Grid */
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-cell {
+  background: #FAF8F5;
+  border: 1px solid rgba(15, 76, 129, 0.04);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 1.25;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.calendar-cell:hover {
+  background: rgba(255, 94, 54, 0.05);
+  border-color: rgba(255, 94, 54, 0.25);
+  transform: translateY(-2px);
+}
+
+.day-number {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-main);
+}
+
+.current-month {
+  background: #FCFBF9;
+}
+
+.other-month {
+  background: #F5F3EF;
+  opacity: 0.5;
+}
+
+.other-month .day-number {
+  color: var(--text-muted);
+}
+
+/* Day states */
+.cell-today {
+  border: 1.8px solid var(--accent) !important;
+  background: rgba(251, 191, 36, 0.08) !important;
+}
+
+.cell-today .day-number {
+  color: #B45309;
+}
+
+.cell-selected {
+  border: 2px solid var(--primary) !important;
+  background: rgba(255, 94, 54, 0.08) !important;
+}
+
+.cell-selected .day-number {
+  color: var(--primary);
+}
+
+.cell-has-events {
+  background: #FFFFFF;
+  border-color: rgba(15, 76, 129, 0.1);
+  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.02);
+}
+
+/* Event Dots */
+.event-dots-container {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.event-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Categories styling matches the badges */
+.dot-festival { background-color: #EF4444; box-shadow: 0 0 5px rgba(239, 68, 68, 0.4); }
+.dot-yoga { background-color: #10B981; box-shadow: 0 0 5px rgba(16, 185, 129, 0.4); }
+.dot-sports { background-color: #3B82F6; box-shadow: 0 0 5px rgba(59, 130, 246, 0.4); }
+.dot-spiritual { background-color: #8B5CF6; box-shadow: 0 0 5px rgba(139, 92, 246, 0.4); }
+.dot-general { background-color: #9CA3AF; box-shadow: 0 0 5px rgba(156, 163, 175, 0.4); }
+
+/* Legend */
+.calendar-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(15, 76, 129, 0.08);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .calendar-container {
+    padding: 1.5rem !important;
+  }
+  .calendar-cell {
+    aspect-ratio: 1;
+    padding: 0.4rem;
+  }
+  .day-number {
+    font-size: 0.95rem;
+  }
+  .event-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .calendar-legend {
+    gap: 1.2rem;
+  }
+}

@@ -1,0 +1,193 @@
+.about-section {
+  background: linear-gradient(180deg, #FBF9F6 0%, #FAF6EE 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.about-text-card, .about-values-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(15, 76, 129, 0.05) !important;
+}
+
+.about-text-card h3, .about-values-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 2.5px solid rgba(255, 94, 54, 0.15);
+  padding-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.about-text-card p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.legal-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+  background: rgba(15, 76, 129, 0.02);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15, 76, 129, 0.05);
+}
+
+.legal-badge {
+  background: var(--grad-sunset);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.legal-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+/* Mission List */
+.mission-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.mission-list li {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.mission-icon {
+  font-size: 2rem;
+  background: #FFFFFF;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 76, 129, 0.08);
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(15, 76, 129, 0.05);
+}
+
+.mission-list li strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--secondary);
+  margin-bottom: 0.4rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+.mission-list li div {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Philosophy Section */
+.philosophy-wrapper {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.philosophy-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy-title span {
+  background: var(--grad-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.philosophy-subtitle {
+  color: var(--text-muted);
+  max-width: 750px;
+  margin: 0 auto 4.5rem auto;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.philosophy-card {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  padding: 3.5rem 2.2rem 2.8rem 2.2rem;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(15, 76, 129, 0.05) !important;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 94, 54, 0.3) !important;
+}
+
+.philosophy-num {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  color: rgba(255, 94, 54, 0.04);
+  line-height: 1;
+}
+
+.philosophy-card h4 {
+  font-size: 1.7rem;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+  font-weight: 800;
+}
+
+.philosophy-card h5 {
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.philosophy-card p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
